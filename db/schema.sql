@@ -11,3 +11,4 @@ CREATE TABLE volunteers
     user_password varchar (255) NOT NULL,
     PRIMARY KEY (id)
 );
+

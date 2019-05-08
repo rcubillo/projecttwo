@@ -15,7 +15,7 @@ module.exports = function(app) {
       skills: req.body.skills
     })
       .then(function() {
-      res.redirect(307, "/api/login");
+        res.redirect(307, "/api/login");
     }).catch(function(err) {
       console.log(err);
       res.json(err);

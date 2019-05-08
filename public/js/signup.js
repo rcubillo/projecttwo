@@ -4,23 +4,26 @@ $(document).ready(function() {
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
   var skillsInput = $("select#skillsinput");
+  var nameInput = $("input#name-input");
 
   //When we click the signup button, we validate that the email, password and skills  are not blanck
   signUpForm.on("submit", function(event) {
     event.preventDefault();
     var userData = {
+      name: nameInput.val().trim(),
       email: emailInput.val().trim(),
       password: passwordInput.val().trim(),
       skills: skillsInput.find("option:selected").val(),
     };
 
     // Wont submit the post if we are missing a email or password
-    if (userData.email === "" || userData.password === "" || userData.skills === "") {
+    if (userData.name === "" || userData.email === "" || userData.password === "" || userData.skills === "") {
       return;
     }
 
     // If we have an email,  password and skills, then, run the signUpUser fucntion.
-    signUpUser(userData.email, userData.password, userData.skills);
+    signUpUser(userData.name, userData.email, userData.password, userData.skills);
+    nameInput.val("");
     emailInput.val("");
     passwordInput.val("");
     skillsInput.val("");
@@ -28,8 +31,9 @@ $(document).ready(function() {
 
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
-  function signUpUser(email, password, skills) {
+  function signUpUser(name, email, password, skills) {
     $.post("/api/signup", {
+      name: name,
       email: email,
       password: password,
       skills: skills

@@ -12,3 +12,10 @@ CREATE TABLE volunteers
     PRIMARY KEY (id)
 );
 
+CREATE TABLE services
+(
+    title varchar (255) NOT NULL,
+    time_date varchar (255) NOT NULL,
+    service_des varchar (255) NOT NULL
+);
+

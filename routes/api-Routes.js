@@ -36,4 +36,10 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/services", function(req,res){
+    db.Services.findAll({}).then(function(){
+      console.log(res.json)
+    })
+  })
 };

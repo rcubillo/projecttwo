@@ -13,7 +13,8 @@ module.exports = function(app) {
       name: req.body.name,
       email: req.body.email,
       password: req.body.password,
-      skills: req.body.skills
+      skills: req.body.skills,
+      availability: req.body.availability
     })
       .then(function() {
         res.redirect(307, "/api/login");

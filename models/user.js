@@ -24,6 +24,11 @@ module.exports = function(sequelize, DataTypes) {
     skills: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+
+    availability: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   });
 

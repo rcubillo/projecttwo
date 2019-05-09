@@ -20,6 +20,7 @@ $(document).ready(function() {
 
     // Wont submit the post if we are missing a email or password
     if (userData.name === "" || userData.email === "" || userData.password === "" || userData.skills === "" || userData.availability === "") {
+      window.alert("Please fill out all the fields");
       return;
     }
 

@@ -3,7 +3,11 @@
 }
 
 #form1 {
-
   display:none;
-  
   }
+
+/* Welcoming part of the navbar */
+#welcome {
+   float: right;
+    color:#007bff;
+}

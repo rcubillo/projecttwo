@@ -1,9 +1,7 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
-
 module.exports = function(app) {
-
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     res.json("/members");
   });
@@ -19,10 +17,11 @@ module.exports = function(app) {
     })
       .then(function() {
         res.redirect(307, "/api/login");
-    }).catch(function(err) {
-      console.log(err);
-      res.json(err);
-    });
+      })
+      .catch(function(err) {
+        console.log(err);
+        res.json(err);
+      });
   });
 
   app.get("/logout", function(req, res) {
@@ -33,8 +32,7 @@ module.exports = function(app) {
   app.get("/api/user_data", function(req, res) {
     if (!req.user) {
       res.json({});
-    }
-    else {
+    } else {
       res.json({
         email: req.user.email,
         id: req.user.id

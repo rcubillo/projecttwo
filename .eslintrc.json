@@ -5,6 +5,9 @@
         "node": true
     },
     "extends": "prettier",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
     "plugins": [
         "prettier"
       ],

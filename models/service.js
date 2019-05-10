@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 module.exports = function(sequelize, DataTypes) {
   var Service = sequelize.define(
     "Service",

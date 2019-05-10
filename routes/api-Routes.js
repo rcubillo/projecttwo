@@ -1,6 +1,7 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
+
 module.exports = function(app) {
 
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
@@ -39,9 +40,23 @@ module.exports = function(app) {
     }
   });
 
-  app.get("/api/services", function(req,res){
-    db.Services.findAll({}).then(function(){
-      console.log(res.json)
-    })
-  })
+  app.get("/api/service", function(_req, res) {
+    db.Service.findAll({})
+      .then(function(data) {
+        res.json(data);
+      })
+      .catch(function(err) {
+        res.json(err);
+      });
+  });
+
+  app.post("/api/service", function(req, res) {
+    db.Service.create(req.body)
+      .then(function(data) {
+        res.json(data);
+      })
+      .catch(function(error) {
+        res.json({ error: error });
+      });
+  });
 };

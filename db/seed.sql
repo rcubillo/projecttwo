@@ -13,3 +13,16 @@ INSERT INTO volunteers
 VALUES
     (NULL, "Susan Lopez", "slopez@soho.com", "mypassword", "contracting", "M-F_5pm-8pm");   
 
+
+INSERT INTO services
+    (id, title, time_date, service_des)
+VALUES
+    (default, "Mentoring", "M-F_6pm-8pm","Mentor fellow Techies at the Library");
+INSERT INTO services
+    (id, title, time_date, service_des)
+VALUES
+    (default,"Food Bank", "M-F_6pm-8pm","Prepare and Serve food at Nashvilles Food Bank");
+    
+
+    
+

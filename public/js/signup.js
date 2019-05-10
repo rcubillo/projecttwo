@@ -19,13 +19,25 @@ $(document).ready(function() {
     };
 
     // Wont submit the post if we are missing a email or password
-    if (userData.name === "" || userData.email === "" || userData.password === "" || userData.skills === "" || userData.availability === "") {
+    if (
+      userData.name === "" ||
+      userData.email === "" ||
+      userData.password === "" ||
+      userData.skills === "" ||
+      userData.availability === ""
+    ) {
       window.alert("Please fill out all the fields");
       return;
     }
 
     // If we have an email,  password and skills, then, run the signUpUser fucntion.
-    signUpUser(userData.name, userData.email, userData.password, userData.skills, userData.availability);
+    signUpUser(
+      userData.name,
+      userData.email,
+      userData.password,
+      userData.skills,
+      userData.availability
+    );
     nameInput.val("");
     emailInput.val("");
     passwordInput.val("");
@@ -35,17 +47,19 @@ $(document).ready(function() {
 
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
-  function signUpUser(name, email, password, skills,availability) {
+  function signUpUser(name, email, password, skills, availability) {
     $.post("/api/signup", {
       name: name,
       email: email,
       password: password,
       skills: skills,
       availability: availability
-    }).then(function(data) {
-       window.location = "/login";
-   // If there's an error, handle it by throwing up a boostrap alert
-    }).catch(handleLoginErr);
+    })
+      .then(function() {
+        window.location = "/login";
+        // If there's an error, handle it by throwing up a boostrap alert
+      })
+      .catch(handleLoginErr);
   }
 
   function handleLoginErr(err) {

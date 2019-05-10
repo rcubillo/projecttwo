@@ -14,8 +14,10 @@ CREATE TABLE volunteers
 
 CREATE TABLE services
 (
-    title varchar (255) NOT NULL,
-    time_date varchar (255) NOT NULL,
-    service_des varchar (255) NOT NULL
+    id int AUTO_INCREMENT,
+    title varchar (255),
+    time_date varchar (255),
+    service_des varchar (255),
+    PRIMARY KEY (id)
 );
 

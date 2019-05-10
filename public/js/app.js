@@ -13,7 +13,7 @@ $(document).ready(function() {
                     ${serviceList[i].time_date}
                   </h6>
                   <p class="card-text">${serviceList[i].service_des}</p>
-                  
+
               </div>
           </div>
           </div>
@@ -56,4 +56,12 @@ $(document).ready(function() {
   };
 
   $("#formSubmit").on("click", postService);
+
+  // var getSkill = function() {
+  //   $.get("/api/skillssearch/:searchSkill").then(function(data) {
+  //     console.log("---PRINTING SERVICES_DB----");
+  //     console.log(data);
+  //     render(data);
+  //   });
+  // };
 });

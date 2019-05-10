@@ -59,4 +59,15 @@ module.exports = function(app) {
         res.json({ error: error });
       });
   });
+
+  // GET route for getting all of the todos
+  app.get("/api/skillssearch/:skill", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.User.findAll({ where: { skills: req.params.skill } }).then(function(
+      dbResults
+    ) {
+      // We have access to the Resultss as an argument inside of the callback function
+      res.json(dbResults);
+    });
+  });
 };

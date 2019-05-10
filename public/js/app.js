@@ -24,8 +24,6 @@ $(document).ready(function() {
 
   var getServices = function() {
     $.get("/api/service").then(function(data) {
-      console.log("---PRINTING SERVICES_DB----");
-      console.log(data);
       render(data);
     });
   };
@@ -57,11 +55,5 @@ $(document).ready(function() {
 
   $("#formSubmit").on("click", postService);
 
-  // var getSkill = function() {
-  //   $.get("/api/skillssearch/:searchSkill").then(function(data) {
-  //     console.log("---PRINTING SERVICES_DB----");
-  //     console.log(data);
-  //     render(data);
-  //   });
-  // };
+
 });

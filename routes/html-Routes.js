@@ -21,8 +21,16 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
-
   app.get("/serviceboard", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/servboard.html"));
+  });
+
+  app.get("/skillssearch", function(req, res) {
+    console.log(res);
+    res.sendFile(path.join(__dirname, "../public/search.html"));
+  });
+
+  app.get("/skillssearch/:skill", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/search.html"));
   });
 };

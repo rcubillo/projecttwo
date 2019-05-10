@@ -60,7 +60,7 @@ module.exports = function(app) {
       });
   });
 
-  // GET route for getting all of the todos
+  // GET route for getting the skills
   app.get("/api/skillssearch/:skill", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.User.findAll({ where: { skills: req.params.skill } }).then(function(

@@ -13,6 +13,7 @@ $(document).ready(function() {
     };
 
     if (!userData.email || !userData.password) {
+      window.alert("Missing the email or password");
       return;
     }
 

@@ -2,6 +2,6 @@
 // and updates the HTML on the page
 $(document).ready(function() {
   $.get("/api/user_data").then(function(data) {
-    $(".member-name").text(data.email);
+    $(".member-name").text(data.name);
   });
 });

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+   <!-- CSS      -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 
     <title>ServUs Nashville|Board</title>
 </head>
@@ -30,6 +32,10 @@
                     <a class="nav-link" href="search.html">Search Volunteers</a>
                 </li>
             </ul>
+
+                <div id="welcome">
+                   <h5>Welcome <span class="member-name"></span></h5>
+                 </div>
         </div>
     </nav>
 
@@ -65,7 +71,6 @@
                                         <label for="exampleFormControlTextarea1">Date and Time:</label>
                                         <textarea class="form-control" id="date" rows="1"></textarea>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="exampleFormControlTextarea1">Description:</label>
                                         <textarea class="form-control" id="description" rows="3"></textarea>
@@ -77,6 +82,14 @@
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
+=======
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Description:</label>
+                                    <textarea class="form-control" id="description" rows="3"></textarea>
+                                </div>
+                                <button type="submit" id="formSubmit" class="btn btn-primary">Submit</button>
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -103,6 +116,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+
+      <script type="text/javascript" src="js/members.js"></script>
+
 </body>
 
 </html>

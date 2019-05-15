@@ -1,4 +1,4 @@
-# ServUs  [![IMAGE ALT TEXT HERE](/rcubillo/projecttwo/blob/master/public/img/logo.png)](https://youtu.be/zkeYNlQDN5w)
+# ServUs  [![IMAGE ALT TEXT HERE](/img/logo.png)](https://youtu.be/zkeYNlQDN5w)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 

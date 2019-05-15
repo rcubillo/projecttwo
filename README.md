@@ -3,10 +3,10 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ## Contributors
-@rcubillo
-@momack55
-@ronaldtbare
-@rcarver515
+- @rcubillo
+- @momack55 memccormack55@gmail.com
+- @ronaldtbare travisbare@gmail.com
+- @rcarver515 
 
 ## Technology
 * Express
@@ -16,19 +16,20 @@
 * NPM
 * BCRYPT
 * PASSPORTJS
-
+*  jQuery
 ## Overview
 
-"FriendFinder" application is basically a dating app. This full-stack site will take in results from my users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+ServUs Nashville is a volunteer community board where users can post volunteer jobs or search for like minded individuals that may be interested in voluntering for similar service oppourtunities.
 
 [![IMAGE ALT TEXT HERE](youtube.png)](https://youtu.be/zkeYNlQDN5w)
 
-## How this works
+## Live Demo
+[Visit ServUs Nashville here!](https://radiant-tor-14793.herokuapp.com/)
 
 
 
-### Instructions
-
+## License
+This project does not have a license and is not currently open for contributions. Suggestions are welcome.
 
 
 ## Contributing Guidelines

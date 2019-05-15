@@ -9,17 +9,27 @@
 - @rcarver515 
 
 ## Technology
-* Express
-* Js
+* EXPRESS
+* JS
 * HTML 5
 * CSS3
 * NPM
 * BCRYPT
 * PASSPORTJS
-*  jQuery
+* JQUERY
+
+## Requirements 
+
+- Node and express web server.
+- Backed by a MySQL Dababase an ORM Sequelize.
+- Has both GET and POST routes for retrieving and adding new data.
+- It has been deployed using Heroku.
+
+
 ## Overview
 
 ServUs Nashville is a volunteer community board where users can post volunteer jobs or search for like minded individuals that may be interested in voluntering for similar service oppourtunities.
+
 
 ## Live Demo
 [Visit ServUs Nashville here!](https://radiant-tor-14793.herokuapp.com/)

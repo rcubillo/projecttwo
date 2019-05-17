@@ -32,7 +32,6 @@ ServUs Nashville is a volunteer community board where users can post volunteer j
 
 
 ## Live Demo
-[Visit ServUs Nashville here!](https://radiant-tor-14793.herokuapp.com/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://radiant-tor-14793.herokuapp.com/)
 

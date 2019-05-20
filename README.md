@@ -28,7 +28,7 @@
 
 ## Overview
 
-ServUs Nashville is a volunteer community board where users can post volunteer jobs or search for like minded individuals that may be interested in voluntering for similar service oppourtunities.
+ServUs Nashville is a volunteer community board where users can post volunteer jobs or search for like minded individuals that may be interested in volunteering for similar service oppourtunities.
 
 
 ## Live Demo
